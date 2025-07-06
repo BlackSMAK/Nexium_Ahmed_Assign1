@@ -1,9 +1,14 @@
 # Dependency directories
 node_modules/
-pnpm-lock.yaml
+
+# Build output
+.next/
+out/
 
 # Environment variables
 .env
+.env.local
+.env.*.local
 
 # Logs
 npm-debug.log*
@@ -13,3 +18,10 @@ yarn-error.log*
 # OS-specific files
 .DS_Store
 Thumbs.db
+
+# Editor-specific
+.vscode/*
+!.vscode/settings.json  # optional: include project-specific settings
+
+# Optional: only if mock_files is disposable or temporary
+mock_files/
