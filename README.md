@@ -49,7 +49,12 @@ Visit http://localhost:3000 to view it in your browser.
 
 ## **Project Structure**
 
-<pre lang="markdown"> ```text ├── app/ // App Router pages ├── components/ // Reusable UI components ├── public/ // Static files ├── styles/ // Global styles ├── .env // Environment variables └── tailwind.config.js // Tailwind config ``` </pre>
+├── app/                 // App Router pages
+├── components/          // Reusable UI components
+├── public/              // Static files 
+├── styles/              // Global styles 
+├── .env                 // Environment variables
+└── tailwind.config.js   // Tailwind config
 
 ## **Environment Variables**
 
