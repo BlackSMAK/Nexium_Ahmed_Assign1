@@ -47,11 +47,14 @@ export default function Home() {
         setHasGeneratedOnce(true);
       }
 
-      const typeToUse =
+      // Uncomment the following lines if you want to use a random quote type using a random selection.
+      /*const typeToUse =
         quoteType === 'random'
           ? ['motivational', 'funny', 'movies'][Math.floor(Math.random() * 3)]
           : quoteType;
-
+      */
+        
+      const typeToUse = quoteType;
       const res = await fetch(`/quotes/${typeToUse}.json`);
       const data = await res.json();
       const randomQuote = data[Math.floor(Math.random() * data.length)];

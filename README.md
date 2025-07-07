@@ -30,8 +30,8 @@ Getting Started
 
 Clone the project and install dependencies:
 
-git clone https://github.com/yourusername/quote-generator.git
--> cd quote-generator
+git clone https://github.com/yourusername/Nexium_Ahmed_Assign1.git
+-> cd Nexium_Ahmed_Assign1
 -> npm install
 
 Then, run the development server:
