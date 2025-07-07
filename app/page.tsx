@@ -103,7 +103,7 @@ export default function Home() {
             transition={{ duration: 0.8, ease: 'easeOut' }}
             className={`text-5xl font-extrabold ${textColor} mb-8`}
           >
-            Quote Generator
+            Quote On the Go!
           </motion.h1>
 
           

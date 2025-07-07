@@ -1,10 +1,10 @@
-Quote Generator
+**Quote On the Go!: SMAK's Minimalistic Quote Generator**
 
 A modern, responsive Quote Generator built with Next.js 14 App Router, Tailwind CSS, and deployed via Vercel.
 
 This app displays random inspirational quotes with support for light and dark themes, and includes social links in the footer.
 
-Features
+**Features**
 
 . Built with Next.js App Router
 
@@ -26,21 +26,21 @@ Features
 
 . View Live on Vercel
 
-Getting Started
+**Getting Started**
 
 Clone the project and install dependencies:
 
-git clone https://github.com/yourusername/Nexium_Ahmed_Assign1.git
--> cd Nexium_Ahmed_Assign1
--> npm install
+git clone https://github.com/yourusername/Nexium_Ahmed_Assign1.git.
+-> cd Nexium_Ahmed_Assign1.
+-> npm install.
 
 Then, run the development server:
 
--> npm run dev
+-> npm run dev.
 
 Visit http://localhost:3000 to view it in your browser.
 
-Project Structure
+**Project Structure**
 
 ├── app/                 # App Router pages
 ├── components/          # Reusable UI components
@@ -49,19 +49,27 @@ Project Structure
 ├── .env                 # Environment variables
 └── tailwind.config.js   # Tailwind config
 
-Environment Variables
+**Environment Variables**
 
 Create a .env file from .env.example if needed. Currently, no API keys are required, but keep this for future extensibility.
 
-Scripts
+**Scripts**
+Run the server in development mode:
+```bash
+npm run dev.
+```
+Run the build script to prepare for production:
+```bash
+npm run build.
+```
+Start the production server:
+```bash
+npm run start.
+```  
 
--> npm run dev     
--> npm run build   
--> npm run start   
+**Deployment**
 
-Deployment
-
-This project is fully configured for Vercel deployment.
+This project is fully configured for Vercel deployment (currently deployed as well).
 
 Push your code to GitHub.
 
@@ -71,7 +79,7 @@ Vercel auto-deploys on every push to main.
 
 Deploy with Vercel
 
-Customization
+**Customization**
 
 Quote Color / Font: Controlled via Tailwind classes in app/page.tsx.
 
@@ -79,21 +87,23 @@ Theme Handling: Uses next-themes. Toggle logic is in components/ThemeToggle.tsx.
 
 Favicon: Replace public/favicon.ico with your own icon. Use tools like favicon.io to generate one.
 
-License
+**License**
 
 This project is open source under the MIT License.
 
-Acknowledgements
+Copyright © 2025 Syed Muhammad Ahmed Khalid (SMAK). All rights reserved.
 
-Next.js
+**Acknowledgements**
 
-Tailwind CSS
+-> Next.js
 
-Vercel
+-> Tailwind CSS
 
-[Quote APIs(not included) / Mock Data (included)]
+-> Vercel
 
-Feedback
+-> [Quote APIs(not included) / Mock Data (included)]
+
+**Feedback**
 
 Feel free to open an issue or PR if you'd like to improve something!
 
