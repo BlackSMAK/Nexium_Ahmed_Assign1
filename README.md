@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Quote Generator
 
-## Getting Started
+A modern, responsive Quote Generator built with Next.js 14 App Router, Tailwind CSS, and deployed via Vercel.
 
-First, run the development server:
+This app displays random inspirational quotes with support for light and dark themes, and includes social links in the footer.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+. Built with Next.js App Router
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+. Styled using Tailwind CSS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+. Light/Dark Theme Toggle
 
-## Learn More
+. Fully Responsive UI
 
-To learn more about Next.js, take a look at the following resources:
+. Refresh button to generate new quotes
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+. Social icons in footer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+. Environment-safe setup using .env files
 
-## Deploy on Vercel
+. Deployed with Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+. Live Demo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+. View Live on Vercel
+
+Getting Started
+
+Clone the project and install dependencies:
+
+git clone https://github.com/yourusername/quote-generator.git
+-> cd quote-generator
+-> npm install
+
+Then, run the development server:
+
+-> npm run dev
+
+Visit http://localhost:3000 to view it in your browser.
+
+Project Structure
+
+├── app/                 # App Router pages
+├── components/          # Reusable UI components
+├── public/              # Static files 
+├── styles/              # Global styles 
+├── .env                 # Environment variables
+└── tailwind.config.js   # Tailwind config
+
+Environment Variables
+
+Create a .env file from .env.example if needed. Currently, no API keys are required, but keep this for future extensibility.
+
+Scripts
+
+-> npm run dev     
+-> npm run build   
+-> npm run start   
+
+Deployment
+
+This project is fully configured for Vercel deployment.
+
+Push your code to GitHub.
+
+Connect your GitHub repo to Vercel.
+
+Vercel auto-deploys on every push to main.
+
+Deploy with Vercel
+
+Customization
+
+Quote Color / Font: Controlled via Tailwind classes in app/page.tsx.
+
+Theme Handling: Uses next-themes. Toggle logic is in components/ThemeToggle.tsx.
+
+Favicon: Replace public/favicon.ico with your own icon. Use tools like favicon.io to generate one.
+
+License
+
+This project is open source under the MIT License.
+
+Acknowledgements
+
+Next.js
+
+Tailwind CSS
+
+Vercel
+
+[Quote APIs(not included) / Mock Data (included)]
+
+Feedback
+
+Feel free to open an issue or PR if you'd like to improve something!
+
