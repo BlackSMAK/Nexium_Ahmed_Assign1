@@ -90,7 +90,7 @@ export default function Home() {
         <ThemeToggle />
 
         <div className="flex flex-col items-center justify-start px-4 pt-24 pb-32 min-h-screen">
-          {/* Title */}
+          
           <motion.h1
             initial={{ y: 0, opacity: 0 }}
             animate={{
@@ -103,7 +103,7 @@ export default function Home() {
             Quote Generator
           </motion.h1>
 
-          {/* Intro or Quote */}
+          
           <AnimatePresence>
             {!quoteGenerated && (
               <motion.p
@@ -114,12 +114,12 @@ export default function Home() {
                 transition={{ duration: 0.5 }}
                 className={`text-lg mb-6 ${textColor}`}
               >
-                Adil bhai ka level hai baki sab peeche hai.
+                Minimalistic Quote Generator.
               </motion.p>
             )}
           </AnimatePresence>
 
-          {/* Quote Display */}
+          
           <AnimatePresence>
             {quoteGenerated && (
               <motion.div
@@ -145,9 +145,9 @@ export default function Home() {
             )}
           </AnimatePresence>
 
-          {/* Dropdown + Button */}
+          
           <div className="relative flex flex-col items-end gap-2 mt-4">
-            {/* Help Icon */}
+            
             <div className="relative group self-end pr-1">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -168,9 +168,9 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Dropdown + Button Row */}
+            
             <div className="relative flex items-center gap-2">
-              {/* Dropdown Toggle */}
+              
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
                 className="p-2 bg-transparent bg-opacity-20 rounded-full hover:bg-opacity-30 transition"
@@ -199,17 +199,17 @@ export default function Home() {
                 </svg>
               </button>
 
-              {/* Generate Button */}
+              
               <motion.button
                 onClick={handleGenerate}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-purple-600 hover:to-blue-500 text-white font-bold py-3 px-6 rounded-full transition duration-300 shadow-lg"
               >
-                Generate Quote
+                Generate 
               </motion.button>
 
-              {/* Dropdown List */}
+              
               {dropdownOpen && (
                 <div className="absolute top-14 left-0 w-44 max-h-48 overflow-y-auto bg-transparent text-white rounded-md shadow-lg z-50 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-100">
                   {['motivational', 'funny', 'movies', 'random'].map((type) => (
@@ -233,8 +233,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Footer */}
-      {/* Footer */}
 <motion.footer
   initial={{ opacity: 0, y: 20 }}
   animate={{ opacity: 1, y: 0 }}
@@ -258,18 +256,6 @@ export default function Home() {
     >
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.6-3.9-1.6-.5-1.3-1.1-1.6-1.1-1.6-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.9.1-.6.3-1.1.5-1.4-2.5-.3-5.1-1.2-5.1-5.5 0-1.2.4-2.1 1-2.9 0-.2-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.1 9.1 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.1 2.4.1 2.6.6.8 1 1.7 1 2.9 0 4.3-2.6 5.2-5.1 5.5.3.3.6.8.6 1.7v2.5c0 .3.2.7.8.6A10.5 10.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z" />
-      </svg>
-    </a>
-
-    {/* Twitter */}
-    <a
-      href="https://twitter.com/adilbhai"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:scale-110 transition-transform"
-    >
-      <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M22.46 6c-.77.35-1.6.59-2.46.7a4.25 4.25 0 0 0 1.88-2.35c-.83.5-1.76.86-2.74 1.06a4.24 4.24 0 0 0-7.26 3.86 12.01 12.01 0 0 1-8.72-4.42 4.24 4.24 0 0 0 1.31 5.65 4.2 4.2 0 0 1-1.92-.53v.05a4.24 4.24 0 0 0 3.4 4.15 4.2 4.2 0 0 1-1.91.07 4.25 4.25 0 0 0 3.96 2.95A8.5 8.5 0 0 1 2 19.54 12 12 0 0 0 8.29 21c7.55 0 11.68-6.25 11.68-11.68v-.53A8.37 8.37 0 0 0 22.46 6Z" />
       </svg>
     </a>
 

@@ -6,7 +6,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 export const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(false);
 
-  // Load theme from localStorage on mount
   useEffect(() => {
     const stored = localStorage.getItem('theme');
     if (stored) {
@@ -15,7 +14,6 @@ export const ThemeToggle = () => {
     }
   }, []);
 
-  // Toggle theme and store
   const toggleTheme = () => {
     const newTheme = isDark ? 'light' : 'synthwave';
     document.documentElement.setAttribute('data-theme', newTheme);

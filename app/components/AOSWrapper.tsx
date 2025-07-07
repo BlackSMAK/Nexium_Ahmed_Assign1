@@ -9,5 +9,5 @@ export default function AOSWrapper() {
     AOS.init({ once: true });
   }, []);
 
-  return null; // just runs effect
+  return null; 
 }
