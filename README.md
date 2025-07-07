@@ -48,14 +48,14 @@ npm run dev
 Visit http://localhost:3000 to view it in your browser.
 
 ## **Project Structure**
-
+```plaintext
 ├── app/                 // App Router pages
 ├── components/          // Reusable UI components
 ├── public/              // Static files 
 ├── styles/              // Global styles 
 ├── .env                 // Environment variables
 └── tailwind.config.js   // Tailwind config
-
+```
 ## **Environment Variables**
 
 Create a .env file from .env.example if needed. Currently, no API keys are required, but keep this for future extensibility.
